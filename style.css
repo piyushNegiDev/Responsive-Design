@@ -3,7 +3,7 @@
   margin: 0;
 }
 main {
-  padding: 3em;
+  padding: 2em;
   background-color: black;
   color: white;
   display: grid;
@@ -17,10 +17,11 @@ main {
   text-align: center;
 }
 .parent {
+  border: 2px solid red;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1em;
-  justify-items: center;
+  justify-content: center;
 }
 .child {
   padding: 1em;
@@ -33,19 +34,4 @@ main {
 }
 .child p {
   text-align: center;
-}
-@media screen and (max-width: 1200px) {
-  .parent {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-@media screen and (max-width: 1000px) {
-  .parent {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media screen and (max-width: 600px) {
-  .parent {
-    grid-template-columns: repeat(1, 1fr);
-  }
 }
