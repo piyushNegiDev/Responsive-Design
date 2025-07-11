@@ -1,4 +1,4 @@
-html {
+body {
   background-color: black;
 }
 * {
@@ -6,6 +6,7 @@ html {
   margin: 0;
   box-sizing: border-box;
 }
+
 main {
   padding: 2em;
   background-color: black;
